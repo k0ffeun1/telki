@@ -24,6 +24,12 @@
   margin-left: 185px;
 }
 
+@media (max-width: 1023px) {
+  .telki {
+    margin-left: 0;
+  }
+}
+
 .section {
   background-color: black;
   overflow: hidden;
