@@ -41,7 +41,7 @@
 }
 @media (min-width: 2000px) {
     .container {
-        max-width: 67.2vw !important;
+        max-width: 65.2vw !important;
     }
 }
 .wrapper {
@@ -59,6 +59,14 @@
     line-height: 110%;
     font-weight: 400;
 }
+@media (min-width: 2000px) {
+    .title {
+        font-size: 3.4vw;
+    }
+    .text {
+        font-size: 1.4vw;
+    }
+}
 .red {
     color: #db0000;
 }
@@ -69,13 +77,13 @@
     min-height: 100vh;
 }
 
+//==================================HEADER===================================================
+
 .header {
     position: relative;
     background-image: url(../images/header/header__bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
-}
-.section {
 }
 .header__wrapper {
     position: relative;
@@ -115,6 +123,9 @@
     top: 17.4vw;
     width: 80vw;
 }
+
+//==================================ABOUT===================================================
+
 .about {
     position: relative;
     background-image: url(../images/about/about__bg.svg);
@@ -130,8 +141,6 @@
     z-index: 5;
     display: flex;
     align-items: flex-end;
-}
-.about__img {
 }
 .about__textblock {
     display: flex;
@@ -150,10 +159,21 @@
     bottom: 0;
 }
 
-.tasks {
+@media (min-width: 2000px) {
+    .about__wrapper {
+        justify-content: space-between;
+    }
+    .about__img {
+        flex-basis: 65%;
+    }
+    .about__textblock {
+        flex-basis: 35%;
+    }
 }
-.tasks__container {
-}
+
+
+//==================================TASKS===================================================
+
 .tasks__wrapper {
     height: 100%;
     display: flex;
@@ -163,8 +183,6 @@
 .tasks__titleblock {
     display: flex;
     justify-content: space-between;
-}
-.tasks__title {
 }
 .images {
     display: flex;
@@ -203,6 +221,8 @@
     color: white;
 }
 
+//==================================INSIGHT===================================================
+
 .insight {
     position: relative;
 }
@@ -220,17 +240,24 @@
     align-items: center;
     justify-content: space-between;
 }
-.insight__textblock {
-}
 .insight__title {
     margin-bottom: 6vw;
-}
-.insight__text {
 }
 .insight__img {
     margin-top: auto;
     width: 45vw;
 }
+
+@media (min-width: 2000px) {
+    .insight__textblock {
+        flex-basis: 40%;
+    }
+    .insight__img {
+        flex-basis: 60%;
+    }
+}
+
+//==================================IDEA===================================================
 
 .idea {
     position: relative;
@@ -253,8 +280,6 @@
     width: 45vw;
     height: 100%;
 }
-.idea__textblock {
-}
 .idea__title {
     margin-bottom: 6vw;
     color: #db0000;
@@ -263,8 +288,8 @@
     margin-bottom: 2vw;
 }
 
-.special {
-}
+//==================================SPECIAL===================================================
+
 .special__wrapper {
     display: flex;
     align-items: center;
@@ -284,8 +309,6 @@
     margin-bottom: 3.2vw;
     font-weight: 400;
 }
-.special__list {
-}
 .special__item {
     display: flex;
 }
@@ -296,14 +319,11 @@
     margin-right: 2vw;
     width: 5vw;
 }
-.special__text {
-}
 .special__img {
     width: 30vw;
 }
 
-.livelib {
-}
+//==================================LIVELIB===================================================
 
 .livelib__wrapper {
     display: flex;
@@ -324,8 +344,6 @@
     margin-bottom: 3.2vw;
     font-weight: 400;
 }
-.livelib__list {
-}
 .livelib__item {
     display: flex;
 }
@@ -336,11 +354,11 @@
     margin-right: 2vw;
     width: 5vw;
 }
-.livelib__text {
-}
 .livelib__img {
     width: 30vw;
 }
+
+//==================================INTEGRATION===================================================
 
 .integration {
     position: relative;
@@ -363,8 +381,7 @@
 .integration__heart {
     width: 60vw;
 }
-
-.textblock {
+.integration__textblock {
     position: absolute;
     width: 100%;
     transform: rotate(-15deg);
@@ -382,8 +399,14 @@
     text-align: right;
 }
 
-.actors {
+@media (min-width: 2000px) {
+    .integration__textblock {
+        top: 22vw;
+    }
 }
+
+//==================================ACTORS===================================================
+
 .slider {
     height: 100%;
 }
@@ -437,9 +460,6 @@
     color: #db0000;
     margin-bottom: 6.5vw;
 }
-
-.actors__text {
-}
 .actors__text-blocknoute {
     font-weight: 400;
     margin-top: 2vw;
@@ -450,6 +470,8 @@
     position: relative;
     height: 100vh;
     width: 47vw;
+    background-image: url(../images/actors/actors__gradient.svg);
+    background-size: cover;
 }
 .actors__gradient {
     position: absolute;
@@ -462,8 +484,11 @@
     position: absolute;
     z-index: 5;
     bottom: 0;
-    left: 2vw;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
+//==================================RESULT===================================================
 
 .result {
     background: linear-gradient(to bottom, #000, #c60101);
@@ -474,11 +499,13 @@
     justify-content: space-between;
 }
 .result__img {
+    flex-basis: 25%;
 }
 .result__img:first-child {
     margin-right: 2vw;
 }
 .result__content {
+    flex-basis: 50%;
     margin-right: 2vw;
     background-color: black;
     height: 100vh;
@@ -489,10 +516,6 @@
 }
 .result__title {
     text-align: center;
-}
-.result__list {
-}
-.result__item {
 }
 .result__item-title {
     color: #c60101;
@@ -509,6 +532,8 @@
 .result__item-text {
     text-align: center;
 }
+
+//==================================TEAM===================================================
 
 .team {
     position: relative;
@@ -541,6 +566,13 @@
             width: 5vw;
         }
     }
+    .slick-cloned {
+        .team__list {
+            img {
+                opacity: 0;
+            }
+        }
+    }
 }
 .team__list {
     display: flex !important;
@@ -558,8 +590,6 @@
 }
 .team__item-img {
     margin-right: 2vw;
-}
-.team__item-textblock {
 }
 .team__item-title {
     font-size: 2.2vw;

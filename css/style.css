@@ -44,7 +44,7 @@
 
 @media (min-width: 2000px) {
   .container {
-    max-width: 67.2vw !important;
+    max-width: 65.2vw !important;
   }
 }
 
@@ -64,6 +64,15 @@
   font-size: 1.25vw;
   line-height: 110%;
   font-weight: 400;
+}
+
+@media (min-width: 2000px) {
+  .title {
+    font-size: 3.4vw;
+  }
+  .text {
+    font-size: 1.4vw;
+  }
 }
 
 .red {
@@ -190,6 +199,22 @@
   bottom: 0;
 }
 
+@media (min-width: 2000px) {
+  .about__wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .about__img {
+    -ms-flex-preferred-size: 65%;
+        flex-basis: 65%;
+  }
+  .about__textblock {
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
+  }
+}
+
 .tasks__wrapper {
   height: 100%;
   display: -webkit-box;
@@ -305,6 +330,17 @@
 .insight__img {
   margin-top: auto;
   width: 45vw;
+}
+
+@media (min-width: 2000px) {
+  .insight__textblock {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  .insight__img {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
 }
 
 .idea {
@@ -475,7 +511,7 @@
   width: 60vw;
 }
 
-.textblock {
+.integration__textblock {
   position: absolute;
   width: 100%;
   -webkit-transform: rotate(-15deg);
@@ -495,6 +531,12 @@
 
 .integration__absolute-text2 {
   text-align: right;
+}
+
+@media (min-width: 2000px) {
+  .integration__textblock {
+    top: 22vw;
+  }
 }
 
 .slider {
@@ -578,6 +620,8 @@
   position: relative;
   height: 100vh;
   width: 47vw;
+  background-image: url(../images/actors/actors__gradient.svg);
+  background-size: cover;
 }
 
 .actors__gradient {
@@ -592,7 +636,9 @@
   position: absolute;
   z-index: 5;
   bottom: 0;
-  left: 2vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .result {
@@ -612,11 +658,18 @@
           justify-content: space-between;
 }
 
+.result__img {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
 .result__img:first-child {
   margin-right: 2vw;
 }
 
 .result__content {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   margin-right: 2vw;
   background-color: black;
   height: 100vh;
@@ -697,6 +750,10 @@
 
 .slider2 .slick-dots button {
   width: 5vw;
+}
+
+.slider2 .slick-cloned .team__list img {
+  opacity: 0;
 }
 
 .team__list {
