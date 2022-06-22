@@ -42,6 +42,12 @@
   height: 100%;
 }
 
+@media (min-width: 2000px) {
+  .container {
+    max-width: 67.2vw !important;
+  }
+}
+
 .wrapper {
   height: 100%;
 }
@@ -515,7 +521,7 @@
   width: 50%;
   position: absolute;
   bottom: 5vw;
-  left: 15vw;
+  left: 11.5vw;
   font-size: 0;
 }
 
@@ -635,6 +641,7 @@
   color: #c60101;
   text-align: center;
   margin-bottom: 2vw;
+  font-weight: 700;
 }
 
 .result__big {
@@ -655,6 +662,7 @@
 .team__line {
   position: absolute;
   bottom: 0;
+  width: 100%;
 }
 
 .team__wrapper {
