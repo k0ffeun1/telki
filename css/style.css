@@ -145,6 +145,12 @@
   width: 80vw;
 }
 
+@media (min-width: 2000px) {
+  .header__heart {
+    right: -10vw;
+  }
+}
+
 .about {
   position: relative;
   background-image: url(../images/about/about__bg.svg);
@@ -637,8 +643,15 @@
   z-index: 5;
   bottom: 0;
   left: 50%;
+  width: 38.5vw;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+@media (min-width: 2000px) {
+  .actors__slider-itemImg {
+    width: 41.5vw;
+  }
 }
 
 .result {
