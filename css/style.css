@@ -261,6 +261,7 @@
   .about__textblock {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+    margin-top: 10vw;
   }
 }
 
@@ -399,6 +400,13 @@
 
 .insight__textblock {
   margin-right: 2vw;
+}
+
+@media (max-width: 1366px) {
+  .insight__img {
+    margin-right: 8vw;
+    width: 35vw;
+  }
 }
 
 @media (min-width: 2000px) {
@@ -551,16 +559,10 @@
 
 .integration {
   position: relative;
-}
-
-.integration__gradient {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 2;
-  width: 100vw;
-  -webkit-transform: scale(160%);
-          transform: scale(160%);
+  background-image: url(../images/integration/integration__gradient.svg);
+  background-size: cover;
+  background-position-y: bottom;
+  background-position-x: right;
 }
 
 .integration__wrapper {
@@ -604,12 +606,18 @@
 }
 
 @media (max-width: 1440px) {
-  .integration__gradient {
-    -webkit-transform: scale(345%);
-            transform: scale(345%);
+  .integration {
+    background-position-y: center;
+    background-position-x: 78%;
   }
   .integration__textblock {
     top: 27vw;
+  }
+}
+
+@media (max-width: 1366px) {
+  .integration__textblock {
+    top: 24vw;
   }
 }
 
@@ -803,6 +811,12 @@
 
 .result__item-text {
   text-align: center;
+}
+
+@media (max-width: 1366px) {
+  .result__img {
+    width: 15vw;
+  }
 }
 
 @media (min-width: 2000px) {
