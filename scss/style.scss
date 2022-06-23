@@ -143,6 +143,12 @@
     }
 }
 
+@media (max-height: 768px) {
+    .header__heart {
+        top: 12vw;
+    }
+}
+
 @media (max-width: 1440px) {
     .header {
         background-position-x: 75%;
@@ -161,16 +167,22 @@
     }
 }
 
+@media (max-width: 1280px) {
+    .header__heart {
+        top: 12vw;
+    }
+}
+
+@media (max-width: 1080px) {
+    .header__heart {
+        top: 23vw;
+    }
+}
+
 @media (min-width: 2000px) {
     .header__heart {
         right: -11vw;
         top: 16vw;
-    }
-}
-
-@media (max-height: 768px) {
-    .header__heart {
-        top: 12vw;
     }
 }
 
@@ -209,6 +221,18 @@
     bottom: 0;
 }
 
+@media (max-height: 768px) {
+    .about__wrapper {
+        justify-content: space-between;
+    }
+    .about__img {
+        width: 37vw;
+    }
+    .about__textblock {
+        flex-basis: 40%;
+    }
+}
+
 @media (max-width: 1440px) {
     .about {
         background-position-x: 75%;
@@ -218,7 +242,7 @@
     }
     .about__img {
         flex-basis: 50%;
-        width: 47vw;
+        width: 45vw;
     }
     .about__textblock {
         flex-basis: 50%;
@@ -235,18 +259,6 @@
     }
     .about__textblock {
         flex-basis: 38%;
-    }
-}
-
-@media (max-height: 768px) {
-    .about__wrapper {
-        justify-content: space-between;
-    }
-    .about__img {
-        width: 37vw;
-    }
-    .about__textblock {
-        flex-basis: 40%;
     }
 }
 
@@ -343,6 +355,13 @@
     }
 }
 
+@media (max-width: 1080px) {
+    .insight__img {
+        margin-right: 8vw;
+        width: 40vw;
+    }
+}
+
 @media (min-width: 2000px) {
     .insight__textblock {
         flex-basis: 40%;
@@ -363,6 +382,7 @@
     left: 0;
     width: 28vw;
     z-index: 2;
+    height: 100%;
 }
 .idea__wrapper {
     position: relative;
@@ -504,6 +524,11 @@
 @media (max-width: 1366px) {
     .integration__textblock {
         top: 24vw;
+    }
+}
+@media (max-width: 1080px) {
+    .integration__textblock {
+        top: 30vw;
     }
 }
 
@@ -826,3 +851,66 @@
 }
 
 // ============================== MOBILE MEDIA ============================================
+
+@media (max-width: 840px) {
+    .title {
+        font-size: 3vw;
+    }
+    .text {
+        font-size: 1.2vw;
+    }
+    .header {
+        background-position-y: 80%;
+    }
+    .header__title {
+        font-size: 4vw;
+    }
+    .header__subtitle {
+        font-size: 2.5vw;
+    }
+    .header__heart {
+        top: 15vw;
+        width: 35vw;
+    }
+    .about {
+        background-position-y: 50%;
+    }
+    .about__img {
+        flex-basis: 50%;
+        width: 35vw;
+    }
+    .about__textblock {
+        flex-basis: 36%;
+        margin-top: auto;
+    }
+    .about__title {
+        margin-bottom: 1vw;
+    }
+    .about__text:not(:last-child) {
+        margin-bottom: 1vw;
+    }
+    .insight__img {
+        margin-right: 5vw;
+        width: 30vw;
+    }
+    .idea__gradient {
+        width: 25vw;
+    }
+    .integration {
+        background-position-x: 100%;
+    }
+    .integration__textblock {
+        top: 17vw;
+    }
+    .actors__subtitle {
+        margin-bottom: 2.5vw;
+    }
+    .result__img {
+        flex-basis: 17%;
+        width: 2vw;
+    }
+    .team__item-img {
+        flex-basis: 23%;
+        width: 5vw;
+    }
+}
