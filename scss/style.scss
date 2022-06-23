@@ -318,6 +318,13 @@
     }
 }
 
+@media (max-height: 768px) {
+    .insight__img {
+        width: 37vw;
+        margin-right: 9vw;
+    }
+}
+
 @media (min-width: 2000px) {
     .insight__textblock {
         flex-basis: 40%;
