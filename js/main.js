@@ -30,7 +30,7 @@ new fullpage('#fullpage', {
     scrollHorizontally: true,
     credits: { enabled: false },
     scrollingSpeed: 500,
-    scrollBar: true
+    scrollBar: false,
 });
 
 $(document).ready(function () {

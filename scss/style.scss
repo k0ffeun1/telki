@@ -168,6 +168,12 @@
     }
 }
 
+@media (max-height: 768px) {
+    .header__heart {
+        top: 12vw;
+    }
+}
+
 //==================================ABOUT===================================================
 
 .about {
@@ -229,6 +235,18 @@
     }
     .about__textblock {
         flex-basis: 38%;
+    }
+}
+
+@media (max-height: 768px) {
+    .about__wrapper {
+        justify-content: space-between;
+    }
+    .about__img {
+        width: 37vw;
+    }
+    .about__textblock {
+        flex-basis: 40%;
     }
 }
 
@@ -320,7 +338,7 @@
 
 @media (max-height: 768px) {
     .insight__img {
-        width: 37vw;
+        width: 30vw;
         margin-right: 9vw;
     }
 }
@@ -495,6 +513,12 @@
     }
 }
 
+@media (max-height: 768px) {
+    .integration__heart {
+        width: 50vw;
+    }
+}
+
 //==================================ACTORS===================================================
 
 .slider {
@@ -654,6 +678,13 @@
     }
 }
 
+@media (max-height: 768px) {
+    .result__img {
+        flex-basis: 20%;
+        width: 5vw;
+    }
+}
+
 //==================================TEAM===================================================
 
 .team {
@@ -735,6 +766,14 @@
     line-height: 110%;
     font-weight: 400;
     color: #c40101;
+}
+
+@media (max-height: 768px) {
+    .slider2 {
+        .slick-arrow {
+            top: -6vw;
+        }
+    }
 }
 
 //==================================OTHERS===================================================
