@@ -31,6 +31,7 @@ new fullpage('#fullpage', {
     credits: { enabled: false },
     scrollingSpeed: 500,
     scrollBar: false,
+    responsiveWidth: 1024,
 });
 
 $(document).ready(function () {
